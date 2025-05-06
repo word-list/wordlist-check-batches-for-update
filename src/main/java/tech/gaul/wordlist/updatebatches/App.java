@@ -87,9 +87,7 @@ public class App implements RequestHandler<SQSEvent, Object> {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                })).forEach(task ->
-
-                {
+                })).forEach(task -> {
                     // Wait for all tasks to complete
                     try {
                         task.get();
