@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-import java.util.stream.Collectors;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
@@ -24,7 +23,6 @@ import com.openai.models.batches.Batch.Status;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.Expression;
 import software.amazon.awssdk.enhanced.dynamodb.TableSchema;
-import software.amazon.awssdk.enhanced.dynamodb.model.ScanEnhancedRequest;
 import tech.gaul.wordlist.updatebatches.models.ActiveBatchRequest;
 import tech.gaul.wordlist.updatebatches.models.ActiveWordQuery;
 import tech.gaul.wordlist.updatebatches.models.UpdateBatchMessage;
